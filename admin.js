@@ -7,7 +7,11 @@ function addFood() {
     let price = document.getElementById('food-price').value;
     let quantity = document.getElementById('food-quantity').value;
     let img = document.getElementById('food-img').value;
+    if (stt == '' || name == '' || desc == '' || price == '' || quantity == '' || img == '') {
+        alert('you cannot leave the boxes blank');
+    }
     let food = new Food(stt, name, desc, price, quantity, img);
+
     foods.push(food);
     console.log(food)
     display();
