@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Index</title>
+    <script src="data.js"></script>
+    <script src="Food.js"></script>
+</head>
+<body>
+<table id="main-food" border="1px solid"></table>
+<script>
+    let listFood = loadData();
+    function displayFood(){
+        let str = '';
+        for (let i = 0; i < listFood.length; i++) {
+            str += `<tr>
+                <td>So thu tu: ${listFood[i].desc}</td>
+                <td>Te mon an: ${listFood[i].name}</td>
+                <td>Mo ta: ${listFood[i].desc}</td>
+                <td>Gia cua mon an: ${listFood[i].price}</td>
+                <td>Dinh luong cua mon an: ${listFood[i].quantity}</td>
+                <td>Anh: ${listFood[i].img}</td>
+            </tr>`;
+        }
+        document.getElementById('main-food').innerHTML = str;
+    }
+    displayFood();
+</script>
+</body>
+</html>

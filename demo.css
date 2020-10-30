@@ -1,0 +1,50 @@
+input {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+body {
+    background-image: url("https://i.imacdn.com/ta/2017/02/22/50cdac9dc46e1b33_37611bb674b6086c_18666614877346934154671.jpg");
+    background-attachment: fixed;
+}
+
+fieldset {
+    border-radius: 20px;
+    background:darkseagreen;
+    text-align: center;
+    width: 400px;
+}
+
+
+form {
+    display: inline-block;
+}
+
+#table3 {
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 1200px;
+    height: 50px;
+}
+
+td {
+    text-align: center;
+    font-size: 15px;
+    background: darkseagreen;
+
+}
+
+th {
+    border-radius: 10px;
+    background: aqua;
+}
+td, th {
+    border: 1px solid black;
+}
+ul,h1{
+    text-align: center;
+    background: aquamarine;
+    color: red;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Admin</title>
+    <script src="Food.js"></script>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="demo.css">
+
+</head>
+<body>
+<a href="index.html" style="color: red" target="_blank">HOME USER</a>
+<ul>
+    <h1> Web Food </h1>
+</ul>
+<form>
+    <fieldset>
+        <legend><h2>Add Food</h2></legend>
+        <input type="text" id="food-stt" placeholder="Food Stt">
+        <input type="text" id="food-name" placeholder="Food Name">
+        <input type="text" id="food-desc" placeholder="Food Desc">
+        <input type="text" id="food-price" placeholder="Food Price">
+        <input type="text" id="food-quantity" placeholder="Food Quantity">
+        <input type="text" id="food-img" placeholder="Food Img">
+        <button type="button" onclick="addFood()">Add</button>
+    </fieldset>
+</form>
+    <form>
+    <fieldset>
+        <legend><h2>Change Dishes</h2></legend>
+        <input type="text" id="edit-stt" placeholder="Food Stt">
+        <input type="text" id="edit-name" placeholder="Food Name">
+        <input type="text" id="edit-desc" placeholder="Food Desc">
+        <input type="text" id="edit-price" placeholder="Food Price">
+        <input type="text" id="edit-quantity" placeholder="Food Quantity">
+        <input type="text" id="edit-img" placeholder="Food Img">
+        <button type="button" onclick="updateFood()">Update</button>
+    </fieldset>
+    </form>
+<table  id="table3">
+    <tr>
+        <th>STT</th>
+        <th>NAME</th>
+        <th>DESC</th>
+        <th>PRICE</th>
+        <th>QUANTITY</th>
+        <th>IMG</th>
+        <th colspan="2">ACTION</th>
+    </tr>
+    <tbody id="table-render"></tbody>
+</table>
+
+<script src="admin.js"></script>
+</body>
+</html>
