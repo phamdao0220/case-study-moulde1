@@ -14,12 +14,12 @@
         let str = '';
         for (let i = 0; i < listFood.length; i++) {
             str += `<tr>
-                <td>So thu tu: ${listFood[i].desc}</td>
-                <td>Te mon an: ${listFood[i].name}</td>
-                <td>Mo ta: ${listFood[i].desc}</td>
-                <td>Gia cua mon an: ${listFood[i].price}</td>
-                <td>Dinh luong cua mon an: ${listFood[i].quantity}</td>
-                <td>Anh: ${listFood[i].img}</td>
+                <td>Số thứ tự : ${listFood[i].desc}</td>
+                <td>Tên món ăn : ${listFood[i].name}</td>
+                <td>Mô tả về món ăn : ${listFood[i].desc}</td>
+                <td>Gía của món ăn : ${listFood[i].price}</td>
+                <td>Định lượng của món ăn : ${listFood[i].quantity}</td>
+                <td>Ảnh : ${listFood[i].img}</td>
             </tr>`;
         }
         document.getElementById('main-food').innerHTML = str;
