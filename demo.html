@@ -19,7 +19,7 @@
                 <td>Mô tả về món ăn : ${listFood[i].desc}</td>
                 <td>Gía của món ăn : ${listFood[i].price}</td>
                 <td>Định lượng của món ăn : ${listFood[i].quantity}</td>
-                <td>Ảnh : ${listFood[i].img}</td>
+                <td>Ảnh : <img width="200px" height="200px" src="${listFood[i].img}" ></td>
             </tr>`;
         }
         document.getElementById('main-food').innerHTML = str;
